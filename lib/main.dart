@@ -29,9 +29,12 @@ class MyApp extends StatelessWidget {
         return null;
       },
       debugShowCheckedModeBanner: false,
-      theme: const CupertinoThemeData(),
+      theme: const CupertinoThemeData(
+        brightness: Brightness.light,
+        primaryColor: CupertinoColors.activeOrange,
+      ),
       title: 'Dome',
-     initialRoute: '/',
+      initialRoute: '/',
     );
   }
 }
